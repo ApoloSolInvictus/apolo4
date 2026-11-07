@@ -106,7 +106,7 @@ function createWindow() {
 
   const devUrl = process.env.VITE_DEV_SERVER_URL
   if (devUrl) mainWindow.loadURL(devUrl)
-  else mainWindow.loadFile(path.join(__dirname, '..', 'dist', 'index.html'))
+  else mainWindow.loadFile(path.join(__dirname, '..', 'dist', 'electron.html'))
 }
 
 app.whenReady().then(() => {
