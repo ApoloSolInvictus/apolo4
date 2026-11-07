@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090c0a" />
+    <meta name="description" content="Apolo4: música original para locales comerciales, playlists por hora y anuncios de tienda con voz. Software más 48 horas de música por un pago único de $700." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Apolo4 — La identidad sonora de tu local" />
+    <meta property="og:description" content="Una estación de música y anuncios creada para el comercio local." />
+    <meta property="og:image" content="./assets/apolo4-estudio.png" />
+    <link rel="icon" type="image/png" href="./assets/apolo4-icon.png" />
+    <link rel="preload" as="image" href="./assets/apolo4-horizontal.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Apolo4 — La identidad sonora de tu local</title>
+  </head>
+  <body>
+    <div class="loader" id="loader" role="status" aria-label="Cargando Apolo4">
+      <img src="./assets/apolo4-horizontal.png" alt="Apolo4" />
+      <div class="loader__orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+      <span>PREPARANDO EL ESTUDIO</span>
+      <div class="loader__bar" aria-hidden="true"><i></i></div>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Apolo4, inicio"><img src="./assets/apolo4-horizontal.png" alt="Apolo4" /></a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú">
+        <span></span><span></span>
+      </button>
+      <nav class="nav" id="primary-nav" aria-label="Navegación principal">
+        <a href="#software">El software</a>
+        <a href="#musica">La música</a>
+        <a href="#licencia">Licencia</a>
+        <a class="nav__cta" href="#paquete">Ver paquete <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="hero__copy">
+          <div class="eyebrow"><span class="eyebrow__line"></span> RADIO LOCAL INTELIGENTE <span class="eyebrow__dot"></span></div>
+          <h1>El sonido de tu local, <em>a tu manera.</em></h1>
+          <p class="hero__lead">Música original, playlists por hora y anuncios con voz en un solo estudio creado para el comercio.</p>
+          <div class="hero__actions">
+            <a class="button button--gold" href="#paquete">Conocer el paquete <span aria-hidden="true">↗</span></a>
+            <a class="button button--quiet" href="#software"><span class="play-small" aria-hidden="true">▶</span> Explorar Apolo4</a>
+          </div>
+          <div class="hero__facts" aria-label="Incluye">
+            <span><i>48</i> horas de música</span>
+            <span><i>03</i> ambientes por horario</span>
+            <span><i>432</i> Hz · afinación activa</span>
+          </div>
+        </div>
+        <div class="hero__visual" aria-label="Apolo, dios griego de la música, con una lira">
+          <div class="hero__halo" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="hero__roman" aria-hidden="true">MVSICA · LVMEN · APOLLO</div>
+          <img class="hero__apollo" src="./assets/apollo-lyre.png" alt="Estatua clásica de Apolo tocando una lira" fetchpriority="high" />
+          <div class="hero__seal"><img src="./assets/apolo4-icon.png" alt="" /><span>UNA RADIO<br />HECHA PARA TU LOCAL</span></div>
+        </div>
+        <a class="hero__scroll" href="#software"><span></span> DESLIZA PARA DESCUBRIR</a>
+      </section>
+
+      <section class="signal-strip" aria-label="Funciones de Apolo4">
+        <div class="signal-strip__track">
+          <span>MÚSICA ORIGINAL</span><b>✳</b><span>MAÑANA · TARDE · NOCHE</span><b>✳</b><span>LOCUCIÓN COMERCIAL</span><b>✳</b><span>REPRODUCCIÓN LOCAL</span><b>✳</b><span>MÚSICA ORIGINAL</span><b>✳</b><span>MAÑANA · TARDE · NOCHE</span>
+        </div>
+      </section>
+
+      <section class="software section" id="software">
+        <div class="section-heading reveal">
+          <span class="eyebrow"><span class="eyebrow__line"></span> EL ESTUDIO</span>
+          <h2>Controla la atmósfera.<br /><em>Sin salir de tu operación.</em></h2>
+          <p>Apolo4 convierte tu computadora en una estación sencilla para ambientar el negocio y comunicar sus promociones.</p>
+        </div>
+        <div class="software__layout">
+          <div class="software__details reveal">
+            <article class="detail-row">
+              <span class="detail-row__number">01</span>
+              <div><h3>Programa por momento</h3><p>Organiza tu música en playlists de Mañana, Tarde y Noche. Activa el cambio según la hora o elige el ambiente manualmente.</p></div>
+            </article>
+            <article class="detail-row">
+              <span class="detail-row__number">02</span>
+              <div><h3>Habla con tus clientes</h3><p>Escribe el mensaje de la tienda y prepara anuncios con las voces disponibles en tu cuenta ElevenLabs.</p></div>
+            </article>
+            <article class="detail-row">
+              <span class="detail-row__number">03</span>
+              <div><h3>Reproduce desde tu PC</h3><p>Gestiona música local, controla el volumen y sigue la pista desde una barra de reproducción integrada.</p></div>
+            </article>
+            <div class="software__note"><span class="note-icon">✳</span><span>La música se reproduce desde el equipo del local. Apolo4 afina la reproducción a <strong>432 Hz</strong>.</span></div>
+          </div>
+          <figure class="app-window reveal">
+            <div class="app-window__top"><span class="window-dots"><i></i><i></i><i></i></span><span>APOLO4 <b>·</b> ESTUDIO</span><span class="app-window__live"><i></i> EN VIVO</span></div>
+            <img src="./assets/apolo4-estudio.png" alt="Captura real de Apolo4: playlists por horario, editor de anuncios y reproductor de música" loading="lazy" />
+            <figcaption><span>INTERFAZ REAL</span><span>01 / ESTUDIO</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="moments section" id="momentos">
+        <div class="moments__intro reveal">
+          <span class="eyebrow"><span class="eyebrow__line"></span> UN DÍA, TRES AMBIENTES</span>
+          <h2>La música acompaña<br /><em>el ritmo del negocio.</em></h2>
+          <p>Separa las pistas por energía y momento. Apolo4 mantiene la programación en el mismo lugar.</p>
+        </div>
+        <div class="moment-grid">
+          <article class="moment-card moment-card--morning reveal"><div class="moment-card__index">I</div><div class="moment-card__icon">☼</div><div class="moment-card__time">05:00 — 12:00</div><h3>Mañana</h3><p>Luz, energía y comienzo.</p><div class="moment-card__line"></div></article>
+          <article class="moment-card moment-card--afternoon reveal"><div class="moment-card__index">II</div><div class="moment-card__icon">≋</div><div class="moment-card__time">12:00 — 18:00</div><h3>Tarde</h3><p>Ritmo para acompañar el día.</p><div class="moment-card__line"></div></article>
+          <article class="moment-card moment-card--night reveal"><div class="moment-card__index">III</div><div class="moment-card__icon">☾</div><div class="moment-card__time">18:00 — 05:00</div><h3>Noche</h3><p>Calma para cerrar la jornada.</p><div class="moment-card__line"></div></article>
+        </div>
+      </section>
+
+      <section class="music section" id="musica">
+        <div class="music__art reveal" aria-hidden="true">
+          <div class="music-disc"><div class="music-disc__label"><img src="./assets/apolo4-icon.png" alt="" /><span>APOLO4<br />ORIGINAL MUSIC</span></div></div>
+          <div class="music-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <span class="music__art-caption">48:00:00 <b>·</b> TU COLECCIÓN</span>
+        </div>
+        <div class="music__copy reveal">
+          <span class="eyebrow"><span class="eyebrow__line"></span> UNA COLECCIÓN PARA TU ESPACIO</span>
+          <h2>48 horas de música.<br /><em>Una firma propia.</em></h2>
+          <p>El paquete incluye una selección de 48 horas de música original producida con apoyo de inteligencia artificial para ambientar locales comerciales.</p>
+          <p>Una alternativa a depender únicamente de catálogos comerciales con pagos recurrentes. Recibes las pistas y un certificado que describe la licencia de uso concedida para el negocio.</p>
+          <a class="text-link" href="#licencia">Conoce el alcance de la licencia <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="voice section">
+        <div class="voice__copy reveal">
+          <span class="eyebrow"><span class="eyebrow__line"></span> LOCUCIÓN COMERCIAL</span>
+          <h2>Tu mensaje.<br /><em>Con voz de marca.</em></h2>
+          <p>Redacta una promoción, elige una voz en español disponible en tu cuenta de ElevenLabs y crea una locución para reproducir en el local.</p>
+          <div class="voice__chips"><span>Voces femeninas y masculinas</span><span>Selección por idioma</span><span>API Key protegida en el equipo</span></div>
+          <p class="voice__fine">La conexión a ElevenLabs requiere una API Key y está sujeta al plan, límites y cargos de esa plataforma.</p>
+        </div>
+        <div class="voice-card reveal" aria-label="Ejemplo visual del creador de anuncios">
+          <div class="voice-card__head"><div><span class="voice-card__step">02</span><span>PREVISUALIZA TU VOZ</span></div><span class="voice-card__badge"><i></i> VOZ EN ESPAÑOL</span></div>
+          <div class="voice-card__message"><small>ANUNCIO DE TIENDA</small><p>“¡Bienvenidos! Descubre las promociones especiales de hoy y encuentra eso que estabas buscando.”</p></div>
+          <div class="voice-card__player"><span class="voice-card__play" aria-hidden="true">▶</span><div class="waveform" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span>VISTA PREVIA</span></div>
+          <div class="voice-card__footer"><span>ElevenLabs</span><span>Tu voz, tu mensaje, tu tienda.</span></div>
+        </div>
+      </section>
+
+      <section class="package section" id="paquete">
+        <div class="package__heading reveal">
+          <span class="eyebrow"><span class="eyebrow__line"></span> EL PAQUETE APOLO4</span>
+          <h2>Una inversión.<br /><em>Tu estudio y tu música.</em></h2>
+        </div>
+        <div class="price-card reveal">
+          <div class="price-card__main">
+            <div class="price-card__brand"><img src="./assets/apolo4-icon.png" alt="" /><span>APOLO4<br /><small>SONIDO LOCAL INTELIGENTE</small></span></div>
+            <h3>Software + colección musical</h3>
+            <p>Para un negocio que quiere ambientar su espacio y comunicar sus promociones desde una misma estación.</p>
+            <div class="price"><span>$</span>700 <small>USD</small></div>
+            <div class="price-card__once"><i></i> PAGO ÚNICO POR EL PAQUETE</div>
+          </div>
+          <div class="price-card__includes">
+            <span class="eyebrow">INCLUYE</span>
+            <ul>
+              <li><span>✳</span> Licencia de uso del software Apolo4</li>
+              <li><span>✳</span> 48 horas de música original producida con IA</li>
+              <li><span>✳</span> Organización Mañana, Tarde y Noche</li>
+              <li><span>✳</span> Certificado con alcance de uso comercial interno</li>
+              <li><span>✳</span> Herramientas de anuncios con voz ElevenLabs</li>
+            </ul>
+            <a class="button button--gold button--wide" href="#licencia">Revisar licencia y condiciones <span aria-hidden="true">↓</span></a>
+            <small>Los servicios y cargos de terceros, como ElevenLabs, no están incluidos en este monto.</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="license section" id="licencia">
+        <div class="license__mark reveal"><img src="./assets/apolo4-icon.png" alt="" /><span>LICENCIA<br />TRANSPARENTE</span></div>
+        <div class="license__copy reveal">
+          <span class="eyebrow"><span class="eyebrow__line"></span> CLARIDAD SOBRE LOS DERECHOS</span>
+          <h2>Un certificado claro.<br /><em>Un alcance definido.</em></h2>
+          <p>El certificado que acompaña la colección identifica el material entregado y documenta el uso comercial interno autorizado por Apolo4, de acuerdo con los derechos que puede conceder y las condiciones del documento.</p>
+          <p>La comunicación de música al público en un local puede involucrar derechos u obligaciones distintas según el país, el repertorio y los titulares. Por eso, el certificado no debe entenderse como una exención universal de licencias o pagos a terceros.</p>
+          <a class="text-link" href="https://www.wipo.int/wipolex/es/legislation/details/21963" target="_blank" rel="noreferrer">Consultar la Ley de Derechos de Autor de Costa Rica en WIPO Lex <span aria-hidden="true">↗</span></a>
+          <small class="license__note">Antes de usar música en espacios abiertos al público, confirma el alcance aplicable a tu negocio con el certificado y la normativa local.</small>
+        </div>
+      </section>
+
+      <section class="faq section">
+        <div class="faq__intro reveal"><span class="eyebrow"><span class="eyebrow__line"></span> PREGUNTAS FRECUENTES</span><h2>Lo esencial,<br /><em>sin letra pequeña.</em></h2></div>
+        <div class="faq__list reveal">
+          <details><summary>¿Qué recibo por los $700?</summary><p>La licencia del software Apolo4, una colección de 48 horas de música original producida con apoyo de IA y un certificado que describe el alcance de uso comercial interno concedido.</p></details>
+          <details><summary>¿El certificado elimina cualquier pago por música en mi local?</summary><p>No promete una exención universal. Acredita el alcance de licencia sobre las pistas suministradas por Apolo4. Las reglas de comunicación pública y los derechos de terceros pueden depender del país, el repertorio y los titulares. Revisa el certificado y la normativa local antes de la difusión en público.</p></details>
+          <details><summary>¿Necesito una cuenta de ElevenLabs?</summary><p>Solo para crear locuciones con ese servicio. Se conecta con tu propia API Key; la cuenta, el plan y los cargos de ElevenLabs son independientes del precio del paquete Apolo4.</p></details>
+          <details><summary>¿Apolo4 sube mi música local?</summary><p>El reproductor está pensado para reproducir los archivos desde el equipo del negocio. La música de tu computadora no se sube a Apolo4.</p></details>
+          <details><summary>¿Puedo separar la música por horario?</summary><p>Sí. Crea playlists de Mañana, Tarde y Noche y activa la programación automática o cambia el ambiente desde el estudio.</p></details>
+        </div>
+      </section>
+
+      <section class="closing">
+        <div class="closing__halo" aria-hidden="true"></div>
+        <img src="./assets/apolo4-icon.png" alt="" />
+        <span class="eyebrow">APOLO4 · RADIO LOCAL INTELIGENTE</span>
+        <h2>Que tu local<br /><em>suene a ti.</em></h2>
+        <a class="button button--gold" href="#paquete">Ver el paquete de $700 <span aria-hidden="true">↑</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand--footer" href="#inicio"><img src="./assets/apolo4-horizontal.png" alt="Apolo4" /></a>
+      <p>Música y voz para los espacios comerciales.</p>
+      <a href="#licencia">Licencia y alcance</a>
+      <span>© <span id="year"></span> Apolo4</span>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
