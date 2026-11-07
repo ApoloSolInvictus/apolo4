@@ -38,6 +38,9 @@ img { display: block; max-width: 100%; }
 .loader__orbit i:nth-child(3) { top: 82%; left: 78%; width: 3px; height: 3px; }
 .loader__bar { width: 130px; height: 2px; overflow: hidden; background: #283027; }
 .loader__bar i { display: block; width: 45%; height: 100%; background: var(--gold); animation: loadline 1.25s ease-in-out infinite; }
+.background-music-control { position: fixed; z-index: 40; bottom: max(18px, env(safe-area-inset-bottom)); left: max(18px, env(safe-area-inset-left)); min-width: 94px; padding: 11px 15px; border: 1px solid rgba(255,178,27,.48); border-radius: 4px; background: rgba(12,16,12,.92); color: #f3c76c; box-shadow: 0 8px 28px #0007; font-size: 10px; font-weight: 700; cursor: pointer; backdrop-filter: blur(12px); transition: border-color .2s ease, background .2s ease, color .2s ease; }
+.background-music-control:hover { border-color: var(--gold); background: #191a13; color: #ffdc93; }
+.background-music-control:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
 .site-header { position: absolute; z-index: 20; top: 0; left: 0; display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 28px clamp(24px, 6vw, 92px); }
 .brand { display: inline-flex; align-items: center; width: 188px; }
 .brand img { width: 100%; height: auto; }

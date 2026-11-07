@@ -45,3 +45,68 @@ document.querySelectorAll('.reveal').forEach((element) => {
 
 const year = document.querySelector('#year')
 if (year) year.textContent = String(new Date().getFullYear())
+
+const backgroundMusic = document.querySelector('#background-music')
+const musicSilenceButton = document.querySelector('#music-silence')
+
+if (backgroundMusic && musicSilenceButton) {
+  const musicPlaylist = [
+    './assets/music/apollo-sol-invictus.mp3',
+    './assets/music/apollo-sol-invictus-2.mp3',
+  ]
+  let currentTrack = 0
+  let needsUserGesture = false
+  backgroundMusic.src = musicPlaylist[currentTrack]
+  backgroundMusic.volume = 0.35
+
+  const setMusicControl = (muted, blocked = false) => {
+    musicSilenceButton.textContent = muted ? (blocked ? 'Activar música' : 'Activar sonido') : 'Silencio'
+    musicSilenceButton.setAttribute('aria-label', muted ? 'Activar música de fondo' : 'Silenciar música de fondo')
+    musicSilenceButton.setAttribute('aria-pressed', String(muted))
+  }
+
+  const playAudibly = () => {
+    backgroundMusic.muted = false
+    return backgroundMusic.play().then(() => {
+      needsUserGesture = false
+      setMusicControl(false)
+      return true
+    }).catch(() => {
+      needsUserGesture = true
+      backgroundMusic.muted = true
+      setMusicControl(true, true)
+      return backgroundMusic.play().then(() => false).catch(() => false)
+    })
+  }
+
+  backgroundMusic.addEventListener('ended', () => {
+    currentTrack = (currentTrack + 1) % musicPlaylist.length
+    backgroundMusic.src = musicPlaylist[currentTrack]
+    backgroundMusic.play().catch(() => {
+      needsUserGesture = true
+      backgroundMusic.muted = true
+      setMusicControl(true, true)
+      backgroundMusic.play().catch(() => {})
+    })
+  })
+
+  musicSilenceButton.addEventListener('click', () => {
+    if (backgroundMusic.muted || backgroundMusic.paused) {
+      playAudibly()
+      return
+    }
+
+    backgroundMusic.muted = true
+    setMusicControl(true)
+  })
+
+  const resumeAfterPageGesture = (event) => {
+    if (!needsUserGesture || event.target.closest?.('#music-silence')) return
+    playAudibly()
+  }
+
+  document.addEventListener('pointerdown', resumeAfterPageGesture, true)
+  document.addEventListener('keydown', resumeAfterPageGesture, true)
+
+  playAudibly()
+}
